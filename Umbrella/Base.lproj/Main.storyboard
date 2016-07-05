@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Kna-k7-b6A">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="5le-q0-U5y">
+            <objects>
+                <navigationController id="Kna-k7-b6A" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mee-Uh-2tW">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="oqe-NW-ltE" kind="relationship" relationship="rootViewController" id="cm1-HN-qa0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bVC-6U-Umv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1089" y="178"/>
+        </scene>
+        <!--Umbrella-->
+        <scene sceneID="1Fn-8K-Jo4">
+            <objects>
+                <tableViewController storyboardIdentifier="UMController" id="oqe-NW-ltE" customClass="UMController" customModule="Umbrella" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="126" sectionHeaderHeight="28" sectionFooterHeight="28" id="ORq-jV-mEH">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UMTimedForecastCell" rowHeight="60" id="zWY-Fb-zNT" customClass="UMTimedForecastCell" customModule="Umbrella" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="600" height="60"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zWY-Fb-zNT" id="NCK-0A-7bT">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="59.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="&lt;Description&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Syi-vo-vjd">
+                                            <rect key="frame" x="274" y="0.0" width="318" height="60"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UmbrellaLogo" translatesAutoresizingMaskIntoConstraints="NO" id="z2q-kH-wmn">
+                                            <rect key="frame" x="84" y="5" width="48.5" height="50"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="z2q-kH-wmn" secondAttribute="height" multiplier="59:60" id="dwQ-7E-nhz"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="24.1 °C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="AOI-Yo-hAt">
+                                            <rect key="frame" x="142" y="0.0" width="121.5" height="59.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                            <color key="textColor" red="0.1019607843" green="0.55294117649999996" blue="0.84705882349999995" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="zCL-gD-T6Z">
+                                            <rect key="frame" x="8" y="0.0" width="68" height="60"/>
+                                            <string key="text">&lt;Date
+Time&gt;</string>
+                                            <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="zCL-gD-T6Z" firstAttribute="width" secondItem="z2q-kH-wmn" secondAttribute="width" multiplier="1.4" id="0RU-4g-uUQ"/>
+                                        <constraint firstItem="z2q-kH-wmn" firstAttribute="leading" secondItem="zCL-gD-T6Z" secondAttribute="trailing" constant="8" id="1Zy-2B-9uA"/>
+                                        <constraint firstItem="zCL-gD-T6Z" firstAttribute="centerY" secondItem="NCK-0A-7bT" secondAttribute="centerY" id="2j1-hs-JYE"/>
+                                        <constraint firstItem="Syi-vo-vjd" firstAttribute="leading" secondItem="AOI-Yo-hAt" secondAttribute="trailing" constant="10" id="A6b-HE-lsA"/>
+                                        <constraint firstAttribute="leadingMargin" secondItem="zCL-gD-T6Z" secondAttribute="leading" id="DY4-LP-DKM"/>
+                                        <constraint firstItem="z2q-kH-wmn" firstAttribute="height" secondItem="NCK-0A-7bT" secondAttribute="height" id="G2T-ZB-Tcu"/>
+                                        <constraint firstItem="AOI-Yo-hAt" firstAttribute="centerY" secondItem="NCK-0A-7bT" secondAttribute="centerY" id="KXf-O2-b2P"/>
+                                        <constraint firstItem="AOI-Yo-hAt" firstAttribute="leading" secondItem="z2q-kH-wmn" secondAttribute="trailing" constant="10" id="ONe-Ty-Alo"/>
+                                        <constraint firstItem="zCL-gD-T6Z" firstAttribute="height" secondItem="NCK-0A-7bT" secondAttribute="height" id="TWc-M3-kbg"/>
+                                        <constraint firstItem="Syi-vo-vjd" firstAttribute="leading" secondItem="z2q-kH-wmn" secondAttribute="trailing" constant="103" id="aCp-Yy-gnu"/>
+                                        <constraint firstItem="z2q-kH-wmn" firstAttribute="top" secondItem="NCK-0A-7bT" secondAttribute="topMargin" constant="-3" id="bE7-VZ-l7d"/>
+                                        <constraint firstItem="AOI-Yo-hAt" firstAttribute="width" secondItem="z2q-kH-wmn" secondAttribute="width" multiplier="2.5" id="ee2-GD-3tz"/>
+                                        <constraint firstItem="Syi-vo-vjd" firstAttribute="height" secondItem="NCK-0A-7bT" secondAttribute="height" id="g9U-Wb-cUg"/>
+                                        <constraint firstItem="z2q-kH-wmn" firstAttribute="centerY" secondItem="NCK-0A-7bT" secondAttribute="centerY" id="gil-gM-0ub"/>
+                                        <constraint firstItem="AOI-Yo-hAt" firstAttribute="height" secondItem="NCK-0A-7bT" secondAttribute="height" id="h5g-8m-H1d"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="Syi-vo-vjd" secondAttribute="trailing" id="peT-YR-O1W"/>
+                                        <constraint firstItem="Syi-vo-vjd" firstAttribute="centerY" secondItem="NCK-0A-7bT" secondAttribute="centerY" id="qgJ-jR-99Q"/>
+                                        <constraint firstItem="AOI-Yo-hAt" firstAttribute="width" secondItem="zCL-gD-T6Z" secondAttribute="width" id="x4k-Uf-cIm"/>
+                                    </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="G2T-ZB-Tcu"/>
+                                            <exclude reference="x4k-Uf-cIm"/>
+                                            <exclude reference="aCp-Yy-gnu"/>
+                                        </mask>
+                                    </variation>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="temperatureLabel" destination="AOI-Yo-hAt" id="NyB-91-4iZ"/>
+                                    <outlet property="timeLabel" destination="zCL-gD-T6Z" id="PFR-gb-wVY"/>
+                                    <outlet property="weatherDescription" destination="Syi-vo-vjd" id="U3H-wB-5gV"/>
+                                    <outlet property="weatherIcon" destination="z2q-kH-wmn" id="MpC-yn-x5a"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="oqe-NW-ltE" id="3dT-ag-gL8"/>
+                            <outlet property="delegate" destination="oqe-NW-ltE" id="VLR-Vm-LMk"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Umbrella" id="F4C-ZC-zbP">
+                        <barButtonItem key="rightBarButtonItem" title="Update" id="GGR-oz-zQ0">
+                            <connections>
+                                <action selector="retryButton:" destination="oqe-NW-ltE" id="rQj-Gp-zIN"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zBA-Vy-Mxd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-412" y="193"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="UmbrellaLogo" width="341" height="341"/>
+    </resources>
+</document>

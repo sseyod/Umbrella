@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B23F6C721BFDFCF4007394D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23F6C711BFDFCF4007394D4 /* AppDelegate.swift */; };
+		B23F6C741BFDFCF4007394D4 /* UMController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23F6C731BFDFCF4007394D4 /* UMController.swift */; };
+		B23F6C771BFDFCF4007394D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B23F6C751BFDFCF4007394D4 /* Main.storyboard */; };
+		B23F6C791BFDFCF4007394D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B23F6C781BFDFCF4007394D4 /* Assets.xcassets */; };
+		B23F6C7C1BFDFCF4007394D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B23F6C7A1BFDFCF4007394D4 /* LaunchScreen.storyboard */; };
+		B23F6C871BFDFCF5007394D4 /* UMControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23F6C861BFDFCF5007394D4 /* UMControllerTests.swift */; };
+		B23F6C921BFDFCF5007394D4 /* UmbrellaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23F6C911BFDFCF5007394D4 /* UmbrellaUITests.swift */; };
+		B23F6CA51BFDFF22007394D4 /* UMOpenWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = B23F6CA41BFDFF22007394D4 /* UMOpenWeather.swift */; };
+		B23F6CA71BFE0808007394D4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B23F6CA61BFE0808007394D4 /* CoreLocation.framework */; };
+		B23F6CAA1BFE08F6007394D4 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B23F6CA81BFE08F6007394D4 /* CoreFoundation.framework */; };
+		B23F6CAB1BFE08F6007394D4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B23F6CA91BFE08F6007394D4 /* Foundation.framework */; };
+		B23F6CAD1BFE08FB007394D4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B23F6CAC1BFE08FB007394D4 /* UIKit.framework */; };
+		B24D8CDD1D2BCB5300E81871 /* UMLocationCapture.swift in Sources */ = {isa = PBXBuildFile; fileRef = B24D8CDC1D2BCB5300E81871 /* UMLocationCapture.swift */; };
+		B2AD3D291BFE1FFE00D59A64 /* UMTimedForecastCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AD3D281BFE1FFE00D59A64 /* UMTimedForecastCell.swift */; };
+		B2AD3D2B1BFE6D1E00D59A64 /* UMOpenWeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2AD3D2A1BFE6D1E00D59A64 /* UMOpenWeatherTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B23F6C831BFDFCF4007394D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B23F6C661BFDFCF4007394D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B23F6C6D1BFDFCF4007394D4;
+			remoteInfo = Umbrella;
+		};
+		B23F6C8E1BFDFCF5007394D4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B23F6C661BFDFCF4007394D4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B23F6C6D1BFDFCF4007394D4;
+			remoteInfo = Umbrella;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B23F6C6E1BFDFCF4007394D4 /* Umbrella.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Umbrella.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B23F6C711BFDFCF4007394D4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B23F6C731BFDFCF4007394D4 /* UMController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UMController.swift; sourceTree = "<group>"; };
+		B23F6C761BFDFCF4007394D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B23F6C781BFDFCF4007394D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B23F6C7B1BFDFCF4007394D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B23F6C7D1BFDFCF4007394D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B23F6C821BFDFCF4007394D4 /* UmbrellaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UmbrellaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B23F6C861BFDFCF5007394D4 /* UMControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UMControllerTests.swift; sourceTree = "<group>"; };
+		B23F6C881BFDFCF5007394D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B23F6C8D1BFDFCF5007394D4 /* UmbrellaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UmbrellaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B23F6C911BFDFCF5007394D4 /* UmbrellaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UmbrellaUITests.swift; sourceTree = "<group>"; };
+		B23F6C931BFDFCF5007394D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B23F6C9F1BFDFE80007394D4 /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
+		B23F6CA41BFDFF22007394D4 /* UMOpenWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UMOpenWeather.swift; sourceTree = "<group>"; };
+		B23F6CA61BFE0808007394D4 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		B23F6CA81BFE08F6007394D4 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		B23F6CA91BFE08F6007394D4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B23F6CAC1BFE08FB007394D4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B24D8CDC1D2BCB5300E81871 /* UMLocationCapture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UMLocationCapture.swift; sourceTree = "<group>"; };
+		B2AD3D281BFE1FFE00D59A64 /* UMTimedForecastCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UMTimedForecastCell.swift; sourceTree = "<group>"; };
+		B2AD3D2A1BFE6D1E00D59A64 /* UMOpenWeatherTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UMOpenWeatherTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B23F6C6B1BFDFCF4007394D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B23F6CAD1BFE08FB007394D4 /* UIKit.framework in Frameworks */,
+				B23F6CAA1BFE08F6007394D4 /* CoreFoundation.framework in Frameworks */,
+				B23F6CAB1BFE08F6007394D4 /* Foundation.framework in Frameworks */,
+				B23F6CA71BFE0808007394D4 /* CoreLocation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B23F6C7F1BFDFCF4007394D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B23F6C8A1BFDFCF5007394D4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B23F6C651BFDFCF4007394D4 = {
+			isa = PBXGroup;
+			children = (
+				B23F6CAC1BFE08FB007394D4 /* UIKit.framework */,
+				B23F6CA81BFE08F6007394D4 /* CoreFoundation.framework */,
+				B23F6CA91BFE08F6007394D4 /* Foundation.framework */,
+				B23F6CA61BFE0808007394D4 /* CoreLocation.framework */,
+				B23F6C9F1BFDFE80007394D4 /* readme.txt */,
+				B23F6C701BFDFCF4007394D4 /* Umbrella */,
+				B23F6C851BFDFCF5007394D4 /* UmbrellaTests */,
+				B23F6C901BFDFCF5007394D4 /* UmbrellaUITests */,
+				B23F6C6F1BFDFCF4007394D4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B23F6C6F1BFDFCF4007394D4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B23F6C6E1BFDFCF4007394D4 /* Umbrella.app */,
+				B23F6C821BFDFCF4007394D4 /* UmbrellaTests.xctest */,
+				B23F6C8D1BFDFCF5007394D4 /* UmbrellaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B23F6C701BFDFCF4007394D4 /* Umbrella */ = {
+			isa = PBXGroup;
+			children = (
+				B23F6CA11BFDFEF0007394D4 /* OpenWeather */,
+				B23F6C711BFDFCF4007394D4 /* AppDelegate.swift */,
+				B23F6C731BFDFCF4007394D4 /* UMController.swift */,
+				B2AD3D281BFE1FFE00D59A64 /* UMTimedForecastCell.swift */,
+				B24D8CDC1D2BCB5300E81871 /* UMLocationCapture.swift */,
+				B23F6C751BFDFCF4007394D4 /* Main.storyboard */,
+				B23F6C781BFDFCF4007394D4 /* Assets.xcassets */,
+				B23F6C7A1BFDFCF4007394D4 /* LaunchScreen.storyboard */,
+				B23F6C7D1BFDFCF4007394D4 /* Info.plist */,
+			);
+			path = Umbrella;
+			sourceTree = "<group>";
+		};
+		B23F6C851BFDFCF5007394D4 /* UmbrellaTests */ = {
+			isa = PBXGroup;
+			children = (
+				B23F6C861BFDFCF5007394D4 /* UMControllerTests.swift */,
+				B2AD3D2A1BFE6D1E00D59A64 /* UMOpenWeatherTests.swift */,
+				B23F6C881BFDFCF5007394D4 /* Info.plist */,
+			);
+			path = UmbrellaTests;
+			sourceTree = "<group>";
+		};
+		B23F6C901BFDFCF5007394D4 /* UmbrellaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B23F6C911BFDFCF5007394D4 /* UmbrellaUITests.swift */,
+				B23F6C931BFDFCF5007394D4 /* Info.plist */,
+			);
+			path = UmbrellaUITests;
+			sourceTree = "<group>";
+		};
+		B23F6CA11BFDFEF0007394D4 /* OpenWeather */ = {
+			isa = PBXGroup;
+			children = (
+				B23F6CA41BFDFF22007394D4 /* UMOpenWeather.swift */,
+			);
+			path = OpenWeather;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B23F6C6D1BFDFCF4007394D4 /* Umbrella */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B23F6C961BFDFCF5007394D4 /* Build configuration list for PBXNativeTarget "Umbrella" */;
+			buildPhases = (
+				B23F6C6A1BFDFCF4007394D4 /* Sources */,
+				B23F6C6B1BFDFCF4007394D4 /* Frameworks */,
+				B23F6C6C1BFDFCF4007394D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Umbrella;
+			productName = Umbrella;
+			productReference = B23F6C6E1BFDFCF4007394D4 /* Umbrella.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B23F6C811BFDFCF4007394D4 /* UmbrellaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B23F6C991BFDFCF5007394D4 /* Build configuration list for PBXNativeTarget "UmbrellaTests" */;
+			buildPhases = (
+				B23F6C7E1BFDFCF4007394D4 /* Sources */,
+				B23F6C7F1BFDFCF4007394D4 /* Frameworks */,
+				B23F6C801BFDFCF4007394D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B23F6C841BFDFCF4007394D4 /* PBXTargetDependency */,
+			);
+			name = UmbrellaTests;
+			productName = UmbrellaTests;
+			productReference = B23F6C821BFDFCF4007394D4 /* UmbrellaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B23F6C8C1BFDFCF5007394D4 /* UmbrellaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B23F6C9C1BFDFCF5007394D4 /* Build configuration list for PBXNativeTarget "UmbrellaUITests" */;
+			buildPhases = (
+				B23F6C891BFDFCF5007394D4 /* Sources */,
+				B23F6C8A1BFDFCF5007394D4 /* Frameworks */,
+				B23F6C8B1BFDFCF5007394D4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B23F6C8F1BFDFCF5007394D4 /* PBXTargetDependency */,
+			);
+			name = UmbrellaUITests;
+			productName = UmbrellaUITests;
+			productReference = B23F6C8D1BFDFCF5007394D4 /* UmbrellaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B23F6C661BFDFCF4007394D4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0710;
+				LastUpgradeCheck = 0710;
+				ORGANIZATIONNAME = "Pete Cole";
+				TargetAttributes = {
+					B23F6C6D1BFDFCF4007394D4 = {
+						CreatedOnToolsVersion = 7.1.1;
+					};
+					B23F6C811BFDFCF4007394D4 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = B23F6C6D1BFDFCF4007394D4;
+					};
+					B23F6C8C1BFDFCF5007394D4 = {
+						CreatedOnToolsVersion = 7.1.1;
+						TestTargetID = B23F6C6D1BFDFCF4007394D4;
+					};
+				};
+			};
+			buildConfigurationList = B23F6C691BFDFCF4007394D4 /* Build configuration list for PBXProject "Umbrella" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B23F6C651BFDFCF4007394D4;
+			productRefGroup = B23F6C6F1BFDFCF4007394D4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B23F6C6D1BFDFCF4007394D4 /* Umbrella */,
+				B23F6C811BFDFCF4007394D4 /* UmbrellaTests */,
+				B23F6C8C1BFDFCF5007394D4 /* UmbrellaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B23F6C6C1BFDFCF4007394D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B23F6C7C1BFDFCF4007394D4 /* LaunchScreen.storyboard in Resources */,
+				B23F6C791BFDFCF4007394D4 /* Assets.xcassets in Resources */,
+				B23F6C771BFDFCF4007394D4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B23F6C801BFDFCF4007394D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B23F6C8B1BFDFCF5007394D4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B23F6C6A1BFDFCF4007394D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B24D8CDD1D2BCB5300E81871 /* UMLocationCapture.swift in Sources */,
+				B2AD3D291BFE1FFE00D59A64 /* UMTimedForecastCell.swift in Sources */,
+				B23F6CA51BFDFF22007394D4 /* UMOpenWeather.swift in Sources */,
+				B23F6C741BFDFCF4007394D4 /* UMController.swift in Sources */,
+				B23F6C721BFDFCF4007394D4 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B23F6C7E1BFDFCF4007394D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2AD3D2B1BFE6D1E00D59A64 /* UMOpenWeatherTests.swift in Sources */,
+				B23F6C871BFDFCF5007394D4 /* UMControllerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B23F6C891BFDFCF5007394D4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B23F6C921BFDFCF5007394D4 /* UmbrellaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B23F6C841BFDFCF4007394D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B23F6C6D1BFDFCF4007394D4 /* Umbrella */;
+			targetProxy = B23F6C831BFDFCF4007394D4 /* PBXContainerItemProxy */;
+		};
+		B23F6C8F1BFDFCF5007394D4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B23F6C6D1BFDFCF4007394D4 /* Umbrella */;
+			targetProxy = B23F6C8E1BFDFCF5007394D4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B23F6C751BFDFCF4007394D4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B23F6C761BFDFCF4007394D4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B23F6C7A1BFDFCF4007394D4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B23F6C7B1BFDFCF4007394D4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B23F6C941BFDFCF5007394D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B23F6C951BFDFCF5007394D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B23F6C971BFDFCF5007394D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Umbrella/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.punlimit.Umbrella;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B23F6C981BFDFCF5007394D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = Umbrella/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.punlimit.Umbrella;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B23F6C9A1BFDFCF5007394D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = UmbrellaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.punlimit.UmbrellaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Umbrella.app/Umbrella";
+			};
+			name = Debug;
+		};
+		B23F6C9B1BFDFCF5007394D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = UmbrellaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.punlimit.UmbrellaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Umbrella.app/Umbrella";
+			};
+			name = Release;
+		};
+		B23F6C9D1BFDFCF5007394D4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = UmbrellaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.punlimit.UmbrellaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Umbrella;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		B23F6C9E1BFDFCF5007394D4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = UmbrellaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.punlimit.UmbrellaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Umbrella;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B23F6C691BFDFCF4007394D4 /* Build configuration list for PBXProject "Umbrella" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B23F6C941BFDFCF5007394D4 /* Debug */,
+				B23F6C951BFDFCF5007394D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B23F6C961BFDFCF5007394D4 /* Build configuration list for PBXNativeTarget "Umbrella" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B23F6C971BFDFCF5007394D4 /* Debug */,
+				B23F6C981BFDFCF5007394D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B23F6C991BFDFCF5007394D4 /* Build configuration list for PBXNativeTarget "UmbrellaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B23F6C9A1BFDFCF5007394D4 /* Debug */,
+				B23F6C9B1BFDFCF5007394D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B23F6C9C1BFDFCF5007394D4 /* Build configuration list for PBXNativeTarget "UmbrellaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B23F6C9D1BFDFCF5007394D4 /* Debug */,
+				B23F6C9E1BFDFCF5007394D4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B23F6C661BFDFCF4007394D4 /* Project object */;
+}
