@@ -11,10 +11,17 @@ import CoreLocation
 
 public class UMLocationCapture: NSObject, CLLocationManagerDelegate {
   
+  public typealias tCallOnLocationChanged = (location:CLLocation) -> Void
+  
   let locationManager = CLLocationManager()
   
-  public override init() {
+  var mCallOnLocationChanged:tCallOnLocationChanged? = nil
+  
+  public init(callOnLocationChanged:tCallOnLocationChanged) {
     super.init()
+    
+    mCallOnLocationChanged = callOnLocationChanged
+    locationManager.requestWhenInUseAuthorization()
   }
 
   private var mLastLocation:CLLocation? = nil
@@ -33,9 +40,13 @@ public class UMLocationCapture: NSObject, CLLocationManagerDelegate {
   public func getLastKnownLocation() -> CLLocation? {
     return mLastLocation
   }
-  
+
   public func locationManager(manager: CLLocationManager, didUpdateToLocation newLocation: CLLocation, fromLocation oldLocation: CLLocation) {
     
     mLastLocation = newLocation
+    
+    if let callback = mCallOnLocationChanged {
+      callback(location:newLocation)
+    }
   }
 }

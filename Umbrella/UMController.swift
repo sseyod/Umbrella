@@ -12,10 +12,16 @@ import CoreLocation
 public class UMController: UITableViewController {
   
   public let cOpenWeather = UMOpenWeather()
-  let locationCapture = UMLocationCapture()
+  var locationCapture:UMLocationCapture? = nil
   
   public override func viewDidLoad() {
     super.viewDidLoad()
+    
+    locationCapture = UMLocationCapture { (location:CLLocation) in
+      self.onLocationChanged(location)
+      // Stop monitoring once we have the first location
+      self.locationCapture?.stopLocationCapture()
+    }
   }
   
   public override func viewWillAppear(animated: Bool) {
@@ -25,30 +31,23 @@ public class UMController: UITableViewController {
     tableView.reloadData()
     
     // Start monitoring location!
-    locationCapture.startLocationCapture()
-    
-    guard let location = locationCapture.getLastKnownLocation() else {
-      return
-    }
-    
-    // This is the first time we've seen a location - so we immmediately query the weather.
-    queryWeatherForCurrentLocation(location)
-    
-    // Wait for a while until querying location
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, Int64(1.0 * Double(NSEC_PER_SEC))), dispatch_get_main_queue()) {
-      self.checkWeatherForLocation()
-    }
+    // checkWeatherForLocation is called automatically when we get the location.
+    locationCapture?.startLocationCapture()
   }
   
   public override func viewWillDisappear(animated: Bool) {
     super.viewWillDisappear(animated)
     
     // Stop monitoring location!
-    locationCapture.stopLocationCapture()
+    locationCapture?.stopLocationCapture()
+  }
+ 
+  public func onLocationChanged(location:CLLocation) {
+    queryWeatherForCurrentLocation(location)
   }
   
   func checkWeatherForLocation() {
-    guard let location = locationCapture.getLastKnownLocation() else {
+    guard let location = locationCapture?.getLastKnownLocation() else {
       return
     }
     queryWeatherForCurrentLocation(location)
